@@ -1,0 +1,507 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 5.10.0-28-amd64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /home/felipe/gcc-13-build/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/felipe/Downloads/autodiff/build/CMakeFiles/3.27.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/felipe/gcc-13-build/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/felipe/Downloads/autodiff/build/CMakeFiles/3.27.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp"
+      binary: "/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d92aa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d92aa.dir/build.make CMakeFiles/cmTC_d92aa.dir/build
+        gmake[1]: Entering directory '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp'
+        Building C object CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o
+        /home/felipe/gcc-13-build/bin/gcc   -v -o CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/home/felipe/gcc-13-build/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.0.0 20230802 (experimental) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d92aa.dir/'
+         /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d92aa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccKyOxb9.s
+        GNU C17 (GCC) version 14.0.0 20230802 (experimental) (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 14.0.0 20230802 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include
+         /usr/local/include
+         /home/felipe/gcc-13-build/include
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: a58d5b3b83127338314b021ffe9b3039
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d92aa.dir/'
+         as -v --64 -o CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o /tmp/ccKyOxb9.s
+        GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2
+        COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_d92aa
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d92aa.dir/link.txt --verbose=1
+        /home/felipe/gcc-13-build/bin/gcc  -v CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o -o cmTC_d92aa 
+        Using built-in specs.
+        COLLECT_GCC=/home/felipe/gcc-13-build/bin/gcc
+        COLLECT_LTO_WRAPPER=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.0.0 20230802 (experimental) (GCC) 
+        COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d92aa' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d92aa.'
+         /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/collect2 -plugin /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/liblto_plugin.so -plugin-opt=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccytd2Ly.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d92aa /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../.. CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d92aa' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d92aa.'
+        gmake[1]: Leaving directory '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include]
+          add: [/usr/local/include]
+          add: [/home/felipe/gcc-13-build/include]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/felipe/gcc-13-build/include] ==> [/home/felipe/gcc-13-build/include]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include;/usr/local/include;/home/felipe/gcc-13-build/include;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d92aa/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d92aa.dir/build.make CMakeFiles/cmTC_d92aa.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-76GCBp']
+        ignore line: [Building C object CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/home/felipe/gcc-13-build/bin/gcc   -v -o CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/felipe/gcc-13-build/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.0.0 20230802 (experimental) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d92aa.dir/']
+        ignore line: [ /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d92aa.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccKyOxb9.s]
+        ignore line: [GNU C17 (GCC) version 14.0.0 20230802 (experimental) (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.0.0 20230802 (experimental)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/felipe/gcc-13-build/include]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: a58d5b3b83127338314b021ffe9b3039]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d92aa.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o /tmp/ccKyOxb9.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2]
+        ignore line: [COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_d92aa]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d92aa.dir/link.txt --verbose=1]
+        ignore line: [/home/felipe/gcc-13-build/bin/gcc  -v CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o -o cmTC_d92aa ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/felipe/gcc-13-build/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.0.0 20230802 (experimental) (GCC) ]
+        ignore line: [COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d92aa' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d92aa.']
+        link line: [ /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/collect2 -plugin /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/liblto_plugin.so -plugin-opt=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccytd2Ly.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d92aa /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../.. CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccytd2Ly.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d92aa] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o] ==> obj [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o]
+          arg [-L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0] ==> dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0]
+          arg [-L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64] ==> dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../..] ==> dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../..]
+          arg [CMakeFiles/cmTC_d92aa.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o] ==> obj [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0]
+        collapse library dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64] ==> [/home/felipe/gcc-13-build/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../..] ==> [/home/felipe/gcc-13-build/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0;/home/felipe/gcc-13-build/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/home/felipe/gcc-13-build/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm"
+      binary: "/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm'
+        
+        Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9da17/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9da17.dir/build.make CMakeFiles/cmTC_9da17.dir/build
+        gmake[1]: Entering directory '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm'
+        Building CXX object CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o
+        /home/felipe/gcc-13-build/bin/g++   -v -o CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/home/felipe/gcc-13-build/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.0.0 20230802 (experimental) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9da17.dir/'
+         /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9da17.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc6XVvVH.s
+        GNU C++17 (GCC) version 14.0.0 20230802 (experimental) (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 14.0.0 20230802 (experimental), GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/x86_64-pc-linux-gnu
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/backward
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include
+         /usr/local/include
+         /home/felipe/gcc-13-build/include
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu
+         /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 671c12995e5c204225b927a07cf351d0
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9da17.dir/'
+         as -v --64 -o CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6XVvVH.s
+        GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2
+        COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_9da17
+        /usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9da17.dir/link.txt --verbose=1
+        /home/felipe/gcc-13-build/bin/g++  -v CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9da17 
+        Using built-in specs.
+        COLLECT_GCC=/home/felipe/gcc-13-build/bin/g++
+        COLLECT_LTO_WRAPPER=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c,c++
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.0.0 20230802 (experimental) (GCC) 
+        COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9da17' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9da17.'
+         /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/collect2 -plugin /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/liblto_plugin.so -plugin-opt=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccINmAS7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9da17 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../.. CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9da17' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9da17.'
+        gmake[1]: Leaving directory '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/x86_64-pc-linux-gnu]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/backward]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include]
+          add: [/usr/local/include]
+          add: [/home/felipe/gcc-13-build/include]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu]
+          add: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0] ==> [/home/felipe/gcc-13-build/include/c++/14.0.0]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/x86_64-pc-linux-gnu] ==> [/home/felipe/gcc-13-build/include/c++/14.0.0/x86_64-pc-linux-gnu]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/backward] ==> [/home/felipe/gcc-13-build/include/c++/14.0.0/backward]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/home/felipe/gcc-13-build/include] ==> [/home/felipe/gcc-13-build/include]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu]
+        collapse include dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/home/felipe/gcc-13-build/include/c++/14.0.0;/home/felipe/gcc-13-build/include/c++/14.0.0/x86_64-pc-linux-gnu;/home/felipe/gcc-13-build/include/c++/14.0.0/backward;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include;/usr/local/include;/home/felipe/gcc-13-build/include;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9da17/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_9da17.dir/build.make CMakeFiles/cmTC_9da17.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/felipe/Downloads/autodiff/build/CMakeFiles/CMakeScratch/TryCompile-5Xk8Vm']
+        ignore line: [Building CXX object CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home/felipe/gcc-13-build/bin/g++   -v -o CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/felipe/gcc-13-build/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.0.0 20230802 (experimental) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9da17.dir/']
+        ignore line: [ /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_9da17.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/cc6XVvVH.s]
+        ignore line: [GNU C++17 (GCC) version 14.0.0 20230802 (experimental) (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.0.0 20230802 (experimental)  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=30 --param ggc-min-heapsize=4096]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/x86_64-pc-linux-gnu]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../include/c++/14.0.0/backward]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /home/felipe/gcc-13-build/include]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed/x86_64-linux-gnu]
+        ignore line: [ /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 671c12995e5c204225b927a07cf351d0]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9da17.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6XVvVH.s]
+        ignore line: [GNU assembler version 2.35.2 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.35.2]
+        ignore line: [COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_9da17]
+        ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9da17.dir/link.txt --verbose=1]
+        ignore line: [/home/felipe/gcc-13-build/bin/g++  -v CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_9da17 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/home/felipe/gcc-13-build/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++ : (reconfigured) ./../gcc13source/configure --prefix=/home/felipe/gcc-13-build --enable-languages=c c++]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.0.0 20230802 (experimental) (GCC) ]
+        ignore line: [COMPILER_PATH=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9da17' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_9da17.']
+        link line: [ /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/collect2 -plugin /home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/liblto_plugin.so -plugin-opt=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccINmAS7.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_9da17 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../.. CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/home/felipe/gcc-13-build/libexec/gcc/x86_64-pc-linux-gnu/14.0.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccINmAS7.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9da17] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o] ==> obj [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o]
+          arg [-L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0] ==> dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0]
+          arg [-L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64] ==> dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../..] ==> dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../..]
+          arg [CMakeFiles/cmTC_9da17.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o] ==> obj [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0] ==> [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0]
+        collapse library dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../../../lib64] ==> [/home/felipe/gcc-13-build/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/../../..] ==> [/home/felipe/gcc-13-build/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtbegin.o;/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/home/felipe/gcc-13-build/lib/gcc/x86_64-pc-linux-gnu/14.0.0;/home/felipe/gcc-13-build/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/home/felipe/gcc-13-build/lib]
+        implicit fwks: []
+      
+      
+...

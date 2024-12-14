@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Autodiff Debug",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/AutoDiff",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [
+          {
+            "name": "LD_LIBRARY_PATH",
+            "value": "/home/felipe/gcc-13-build/lib64"
+          }
+        ],
+        "externalConsole": false,
+        "MIMode": "gdb",
+        "setupCommands": [
+          {
+            "description": "Habilitar impressão de informações do debugger",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "miDebuggerPath": "/usr/local/bin/gdb", // Ensure this path is correct
+        "preLaunchTask": "CMake Build"
+      }
+    ]
+  }
+  
