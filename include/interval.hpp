@@ -12,7 +12,15 @@ namespace flib
         mpfr_t u;
 
     public:
-        interval(T a, T b)
+
+
+        interval()
+        {
+            mpfr_init_set_d(l, 0.0, MPFR_RNDD);
+            mpfr_init_set_d(u, 0.0, MPFR_RNDU);
+        }
+
+         interval(T a, T b)
         {
             if (mpfr_cmp(a, b) > 0)
             {
@@ -23,6 +31,25 @@ namespace flib
 
             mpfr_set(l, a, MPFR_RNDD);
             mpfr_set(u, b, MPFR_RNDU);
+        }
+
+
+        interval( interval const& iv )
+        {
+          mpfr_init2( l, Prec );
+          mpfr_init2( u, Prec );
+          mpfr_set( l, iv.l, MPFR_RNDD );
+          mpfr_set( u, iv.u, MPFR_RNDU );
+        }
+
+        interval &operator=( interval const& iv)
+        {
+            if (this != &iv)
+            {
+                mpfr_set(l, iv.l, MPFR_RNDD);
+                mpfr_set(u, iv.u, MPFR_RNDU);
+            }
+            return *this;
         }
 
         ~interval()
@@ -114,7 +141,7 @@ namespace flib
 
             mpfr_init2(r, Prec);
 
-            mpfr_add(r, this->u, this->l, MPFR_RNDU);
+            mpfr_add(r, this->l, this->u, MPFR_RNDU);
             mpfr_div_ui(r, r, 2, MPFR_RNDN);
 
             interval<T, Prec> result(r, r);
@@ -454,23 +481,23 @@ namespace flib
         friend std::ostream &operator<<(std::ostream &os, const interval &iv)
         {
             char lb[Prec], ub[Prec];
-            mpfr_sprintf(lb, "%.20Re", iv.l);
-            mpfr_sprintf(ub, "%.20Re", iv.u);
+            mpfr_sprintf(lb, "%.310RNa", iv.l);
+            mpfr_sprintf(ub, "%.310RNa", iv.u);
             os << "[ " << lb << " , " << ub << " ]";
             return os;
         }
 
         //------------------------------------------------
-        //Intersection
+        // Intersection
         //------------------------------------------------
 
-        static interval intersection(const interval &a, const interval &b)  
+        static interval intersection(const interval &a, const interval &b)
         {
             if (mpfr_cmp(b.u, a.l) < 0 || mpfr_cmp(a.u, b.l) < 0)
             {
                 throw std::domain_error("Empty intersection");
             }
-            
+
             mpfr_t min, max;
             mpfr_inits2(Prec, min, max, NULL);
 
@@ -481,6 +508,45 @@ namespace flib
 
             return r;
         }
+
+        // has zero
+        //
+        //--------
+
+        //------------------------------------------------
+        // functions
+        //------------------------------------------------
+
+        static interval exp(const interval &x)
+        {
+            mpfr_t lb, ub;
+            mpfr_inits2(Prec, lb, ub, NULL);
+
+            mpfr_exp(lb, x.l, MPFR_RNDD);
+            mpfr_exp(ub, x.u, MPFR_RNDU);
+
+            interval<T, Prec> r(lb, ub);
+
+            return r;
+        }
+
+        static interval sqrt(const interval &x)
+        {
+            if (mpfr_sgn(x.l) < 0 || mpfr_sgn(x.u) < 0)
+            {
+                throw std::domain_error("The interval has negative values");
+            }
+
+            mpfr_t lb, ub;
+            mpfr_inits2(Prec, lb, ub, NULL);
+
+            mpfr_sqrt(lb, x.l, MPFR_RNDD);
+            mpfr_sqrt(ub, x.u, MPFR_RNDU);
+
+            interval<T, Prec> r(lb, ub);
+
+            return r;
+        }
     };
 
-} // namespace flib
+} // namespace
