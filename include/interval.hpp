@@ -481,8 +481,8 @@ namespace flib
         friend std::ostream &operator<<(std::ostream &os, const interval &iv)
         {
             char lb[Prec], ub[Prec];
-            mpfr_sprintf(lb, "%.310RNa", iv.l);
-            mpfr_sprintf(ub, "%.310RNa", iv.u);
+            mpfr_sprintf(lb, "%.310Re", iv.l);
+            mpfr_sprintf(ub, "%.310Re", iv.u);
             os << "[ " << lb << " , " << ub << " ]";
             return os;
         }
